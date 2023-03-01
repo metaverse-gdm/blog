@@ -1,7 +1,3 @@
-# Kattsu Sandbox
-
-[https://katsusand.dev](https://katsusand.dev)
-
 ## セットアップ
 
 ```sh
