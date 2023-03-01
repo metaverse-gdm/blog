@@ -1,0 +1,26 @@
+@import "./style.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  @media screen and (min-width: 960px) {
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.header-title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: $white-color;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  @media screen and (min-width: 960px) {
+    font-size: 24px;
+  }
+}

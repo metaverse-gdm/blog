@@ -1,0 +1,117 @@
+$bg-dark-color: #222831;
+$bg-light-color: #f9f7f7;
+$text-color: #222831;
+$white-color: #fff;
+$link-color: #3f72af;
+$accent-color: #fc5185;
+
+$break-point: 960px;
+$main-width: 800px;
+$aside-width: 300px;
+
+.container {
+  @media screen and (min-width: $break-point) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.main {
+  @media screen and (min-width: $break-point) {
+    width: $main-width;
+    position: relative;
+    z-index: 1000;
+  }
+}
+
+.aside {
+  display: none;
+  @media screen and (min-width: $break-point) {
+    display: block;
+    width: $aside-width;
+    height: 100%;
+    margin-left: 1rem;
+    position: sticky;
+    top: 1rem;
+    z-index: 1000;
+    font-size: 14px;
+  }
+}
+
+.box {
+  padding: 1rem;
+  background-color: $bg-light-color;
+  @media screen and (min-width: $break-point) {
+    padding: 2rem;
+    border-radius: 4px;
+  }
+}
+
+.aside-box {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: $bg-light-color;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.gatsby-code-title {
+  background: #6a7d2f;
+  color: $white-color;
+  margin-bottom: -0.45rem;
+  padding: 0.2rem 0.7rem 0.3rem;
+  font-size: 0.8rem;
+  border-radius: 4px 4px 0 0;
+}
+
+:not(pre) > code[class*="language-"] {
+  background-color: #ffe0e0;
+}
+
+pre[class*="language-"] {
+  border-radius: 0 0 4px 4px !important;
+  code {
+    font-size: 0.9rem !important;
+  }
+}
+
+.table-scroll {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.gatsby-resp-image-wrapper {
+  white-space: normal !important;
+}
+
+.gatsby-resp-image-background-image {
+  padding-bottom: 0 !important;
+}
+
+.gatsby-resp-image-image {
+  position: relative !important;
+  height: auto !important;
+}
+
+.gatsby-resp-image-link {
+  display: inline !important;
+  white-space: normal !important;
+}
+
+table {
+  td,
+  th {
+    padding: 0 0.2rem !important;
+    border: 1px solid hsla(0, 0%, 0%, 0.12);
+  }
+  thead > tr {
+    background-color: #eee;
+  }
+  tr:nth-of-type(even) {
+    background-color: #eee;
+  }
+}

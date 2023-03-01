@@ -1,0 +1,24 @@
+@import "./style.scss";
+
+.list {
+  list-style: none;
+  margin: 0;
+}
+
+.listItem {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.heading1 {
+  line-height: 1.4;
+  margin-top: 0.4rem;
+}
+
+.heading2 {
+  line-height: 1.4;
+  margin-top: 0.2rem;
+  margin-left: 0.8rem;
+}
